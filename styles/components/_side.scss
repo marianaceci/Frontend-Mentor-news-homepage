@@ -1,0 +1,47 @@
+@import '../abstract/variables';
+
+.side-section {
+    background-color: $very-dark-blue;
+    padding: 25px 20px;
+    color: $grayish-blue;
+
+    h2 {
+        color: $soft-orange;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    article  {
+        padding: 35px 0;
+
+        &:nth-child(3){
+            border-top: 1px solid $dark-grayish-blue;
+            border-bottom: 1px solid $dark-grayish-blue;
+        }
+
+        &:nth-child(4){
+            padding-bottom: 0;
+        }
+        
+        h3 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: $off-white;
+        }
+
+        p{
+            line-height: 1.5rem;
+            margin-top: 10px;
+            font-size: 1.025rem;
+        }
+    }
+
+    @media screen and(min-width: $min-width){
+        grid-area: 2 / 3 / 4 / 4;
+
+        h3:hover{
+            color: $soft-orange;
+            cursor: pointer;
+        }
+    }
+}
