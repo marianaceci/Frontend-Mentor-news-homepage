@@ -200,6 +200,7 @@ header .show__menu-transition {
   background-color: hsl(240deg, 100%, 5%);
   padding: 25px 20px;
   color: hsl(233deg, 8%, 79%);
+  margin-top: 80px;
 }
 .side-section h2 {
   color: hsl(35deg, 77%, 62%);
@@ -228,6 +229,7 @@ header .show__menu-transition {
 }
 @media screen and (min-width: 763px) {
   .side-section {
+    margin-top: 0;
     grid-area: 2/3/4/4;
   }
   .side-section h3:hover {
@@ -251,32 +253,38 @@ header .show__menu-transition {
   color: hsl(236deg, 13%, 42%);
   line-height: 1.5rem;
   font-size: 1.025rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-.top-section button {
-  border: none;
+.top-section a {
+  text-decoration: none;
   background-color: hsl(5deg, 85%, 63%);
   text-transform: uppercase;
   color: hsl(36deg, 100%, 99%);
   font-family: "Inter", sans-serif;
   padding: 15px 30px;
   letter-spacing: 0.4rem;
-  margin-top: 30px;
 }
 @media screen and (min-width: 763px) {
   .top-section {
     grid-area: 2/1/4/3;
-    margin-bottom: 0;
     display: grid;
     grid: repeat(2, auto)/repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 0;
   }
   .top-section picture {
     grid-area: 1/1/2/3;
   }
   .top-section h1 {
-    padding-right: 70px;
+    padding-right: 30px;
+    margin: 0;
   }
-  .top-section button:hover {
+  .top-section p {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .top-section a:hover {
     cursor: pointer;
     background-color: hsl(240deg, 100%, 5%);
   }

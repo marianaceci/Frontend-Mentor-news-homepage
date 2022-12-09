@@ -17,35 +17,43 @@
         color: $dark-grayish-blue;
         line-height: 1.5rem;
         font-size: 1.025rem;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
-    button {
-        border: none;
+    a {
+        text-decoration: none;
         background-color: $soft-red;
         text-transform: uppercase;
         color: $off-white;
         font-family: $font;
         padding: 15px 30px;
         letter-spacing: 0.4rem;
-        margin-top: 30px;
     }
 
     @media screen and(min-width: $min-width){
         grid-area: 2 / 1 / 4 / 3;
-        margin-bottom: 0;
         display: grid;
         grid: repeat(2, auto) / repeat(2, 1fr); 
         gap: 30px;
+        margin-bottom: 0;
        
-        picture {
+        picture{
             grid-area: 1 / 1 / 2 / 3;
+            
         }
 
         h1 {
-            padding-right: 70px;
+            padding-right: 30px;
+            margin: 0;
         }
 
-        button:hover {
+        p{
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        a:hover {
             cursor: pointer;
             background-color: $very-dark-blue;
         }

@@ -4,6 +4,7 @@
     background-color: $very-dark-blue;
     padding: 25px 20px;
     color: $grayish-blue;
+    margin-top: 80px;
 
     h2 {
         color: $soft-orange;
@@ -37,6 +38,7 @@
     }
 
     @media screen and(min-width: $min-width){
+        margin-top: 0;
         grid-area: 2 / 3 / 4 / 4;
 
         h3:hover{
